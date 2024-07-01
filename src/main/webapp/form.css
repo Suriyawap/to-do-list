@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+
+
+ body{
+            font-family: Arial, sans-serif;
+            background-image:url("https://suriyax1.my.canva.site/images/ea3650bfdf42a8c3412c086b4997aa0e.jpg");
+            background-repeat:no-repeat;
+            background-size:100%;
+            color: white;
+            font-family: "Cinzel", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+              display: flex;
+            flex-direction:column;
+            align-items: center;
+            gap:70px;
+        }
+        .login-container {
+          
+            background-color:transparent;
+            backdrop-filter:blur(30px);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 30%;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .login-container input[type="text"],.login-container input[type="number"],.login-container input[type="date"],.login-container input[type="email"],.login-container input[type="password"]{
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+         
+        .login-container button{
+            width: 100%;
+            padding: 10px;
+            background:linear-gradient(90deg, #94c0fc,#3c79f5);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: large;
+        }
+        .login-container button:hover {
+            background-color: #8000ff;
+        }
+        
+  a{
+	font-size: large;
+	text-decoration: none;
+	color: white;
+}
+
+a:any-link{
+  color:white;
+}
+
+
+
+
+
+
+.input {
+  -webkit-appearance: none;
+ /* remove default */
+  display: block;
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+  box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset hsla(0,0%,0%,.5) 0 0 0 1px;
+  background-color: hsla(0,0%,0%,.2);
+  background-image: -webkit-radial-gradient( hsla(200,100%,90%,1) 0%, hsla(200,100%,70%,1) 15%, hsla(200,100%,60%,.3) 28%, hsla(200,100%,30%,0) 70% );
+  background-repeat: no-repeat;
+  -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
+    -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
+  outline: none;
+}
+
+.input:checked {
+  -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+    -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+}
+
+.input:active {
+  -webkit-transform: scale(1.5);
+  -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
+}
+
+
+
+/* The up/down direction logic */
+
+.input,
+.input:active {
+  background-position: 0 24px;
+}
+
+.input:checked {
+  background-position: 0 0;
+}
+
+.input:checked ~ .input,
+.input:checked ~ .input:active {
+  background-position: 0 -24px;
+}
